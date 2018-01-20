@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <style>
+   div {
+      
+      height: 400px; /*makes background 400px*/
+      background: linear-gradient(to bottom right,blue,yellow); /*makes background fade from blue to yellow*/
+      text-align:center;/*aligns text in div to the center*/
+    }
+    #div1{
+      margin-left:50px;/*Pushes object right 50px*/
+      position:relative;/*keeps item in same place depending on what user does.*/
+      width: 100px;/*makes width of object 100px*/
+      height: 100px;/*makes height of object 100px*/
+      background: linear-gradient(to left,red,orange);/*makes background of div fade from red to orange diagonally*/
+      transition: transform 5s;/*makes the transition span over 5 seconds*/
+      
+      
+    }
+    #div1:hover{
+      -webkit-transform:rotateX(3600deg);/*rotates the object over the X axis (horizontally)*/
+      transform: rotateY(360deg)/*rotates object over the Y axis (vertically)*/
+      
+    }
+    
+    #div2{
+      position:relative;
+      width:100px;/*makes width of object 100px*/
+      height:100px;/*makes height of object 100px*/
+      background: linear-gradient(to left, brown,teal);/*makes background of div fade from brown to teal diagonally*/
+      margin-left:325px;/*Pushes object right 325px*/
+      margin-bottom:50px;/*Pushes object up 50px*/
+      transition: transform 1s;/*makes the transition span over 1 second*/
+    }
+    
+    #div2:hover{
+      -webkit-transform:rotateX(3600deg);/*rotates the object over the X axis (horizontally)*/
+      transform: rotateX(360deg)/*rotates the object over the X axis (horizontally)*/
+    }
+
+    
+
+      </style>
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+  <body>
+  <div><h1>WUMBOLOGY 101</h1><p>Every year, a class of students get ready for the most prestigious class of the year. This class has produced many of the celebrities we love today,such as Patrick Star, Spongebob Squarepants and Squidwa.. scratch that. Are you ready for Wumbology 101? </p>
+
+  <div id=div1>YES!</div>
+  <div id="div2"> NO...</div></div>
+  </body>
+</html>
